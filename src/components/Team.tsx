@@ -1,8 +1,8 @@
 const team = [
   {
     name: "Ian Cardosi",
-    role: "Managing Partner",
-    bio: "Ian runs the show. He sets the strategic direction for the firm, manages key partnerships, and stays close to every project — from deal sourcing through equipment commissioning and daily field ops. He comes from a deep construction background and owns and operates active car wash locations himself. Ian's the guy who'll be on-site at 6 AM troubleshooting a pump and in the conference room by noon closing a deal. That dual perspective — builder and business operator — is what makes the whole platform work.",
+    role: "Design and Execution",
+    bio: "Ian sets the strategic direction for the firm, manages key partnerships, and maintains direct involvement in every project — from deal sourcing and equipment commissioning through daily field operations. He brings a deep construction background and owns and operates active car wash locations himself. That hands-on experience across both the physical build and the business side gives him a perspective that drives every decision at the firm.",
     specialties: [
       "Strategic Leadership & Deal Sourcing",
       "Partner & Investor Relations",
@@ -24,7 +24,7 @@ const team = [
   {
     name: "Ezra",
     role: "Operations & Development",
-    bio: "Ezra handles the numbers and the growth. He drives site selection, capital formation, financing, and operational strategy across the portfolio. Before car wash, he built and scaled a commercial laundromat chain and a pickup-and-delivery service across Chicagoland, and spent time in sell-side investment banking. He runs the analytical engine behind every deal — underwriting, financial modeling, KPI tracking, and performance optimization — and manages the fractional CFO function for managed properties.",
+    bio: "Responsible for underwriting, business development, and operational initiatives across the portfolio.",
     specialties: [
       "Site Selection & Acquisition",
       "Capital Formation & Deal Structuring",
@@ -46,13 +46,8 @@ export default function Team() {
             Leadership
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 tracking-tight mb-6">
-            We Build What We Sell
+            Our Team
           </h2>
-          <p className="text-lg text-stone-500 leading-relaxed">
-            No ivory tower. No slide decks without calluses. Our team has built,
-            bought, operated, and scaled the kinds of businesses we work on
-            every day — and we put our own money alongside yours.
-          </p>
         </div>
 
         {/* Team grid */}

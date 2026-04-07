@@ -45,8 +45,7 @@ export default function Contact() {
             <p className="text-lg text-stone-500 leading-relaxed mb-10">
               Whether you&apos;re looking to build a new wash, refurbish an
               existing site, optimize your operations, or explore selling your
-              property — we&apos;d like to hear from you. No pitch deck
-              required.
+              property — we&apos;d like to hear from you.
             </p>
 
             {/* Contact details */}

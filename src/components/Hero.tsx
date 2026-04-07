@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-stone-100 px-4 py-1.5 mb-8">
             <span className="h-2 w-2 rounded-full bg-stone-700 animate-pulse" />
             <span className="text-xs font-semibold text-stone-700 uppercase tracking-wider">
-              Turnkey Car Wash Development &amp; Operations
+              Turnkey Development, Redevelopment, Management &amp; Financial Services
             </span>
           </div>
 
