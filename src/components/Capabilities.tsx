@@ -105,18 +105,18 @@ const services = [
 export default function Capabilities() {
   return (
     <section id="capabilities" className="relative py-24 lg:py-32">
-      <div className="absolute inset-0 bg-navy-950" />
+      <div className="absolute inset-0 bg-white" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-3xl mb-16">
-          <p className="text-sm font-semibold text-gold-400 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-3">
             Capabilities
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 tracking-tight mb-6">
             A Car Wash in a Box
           </h2>
-          <p className="text-lg text-slate-400 leading-relaxed">
+          <p className="text-lg text-stone-500 leading-relaxed">
             Building from scratch. Refurbishing a tired wash. Optimizing an
             existing operation. Acquiring a distressed property. Whatever the
             starting point, we bring the expertise, equipment, chemicals, and
@@ -124,39 +124,39 @@ export default function Capabilities() {
           </p>
         </div>
 
-        {/* Services grid — top row of 3, then 2x2 grid for remaining 4 */}
+        {/* Services grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => {
             const Icon = service.icon;
             return (
               <div
                 key={service.title}
-                className="group relative rounded-2xl border border-navy-700/50 bg-navy-900/50 p-8 hover:border-gold-500/30 transition-all duration-300 flex flex-col"
+                className="group relative rounded-2xl border border-stone-200 bg-stone-50 p-8 hover:border-stone-300 hover:shadow-sm transition-all duration-300 flex flex-col"
               >
                 {/* Icon */}
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-gold-400 mb-5 group-hover:bg-gold-500/15 transition-colors">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-stone-200 text-stone-700 mb-5 group-hover:bg-stone-300 transition-colors">
                   <Icon size={24} />
                 </div>
 
                 {/* Content */}
-                <p className="text-xs font-semibold text-gold-500 uppercase tracking-wider mb-1">
+                <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-1">
                   {service.subtitle}
                 </p>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-xl font-bold text-stone-900 mb-3">
                   {service.title}
                 </h3>
-                <p className="text-sm text-slate-400 leading-relaxed mb-6 flex-1">
+                <p className="text-sm text-stone-500 leading-relaxed mb-6 flex-1">
                   {service.description}
                 </p>
 
                 {/* Detail list */}
-                <ul className="space-y-2 pt-5 border-t border-navy-700/50">
+                <ul className="space-y-2 pt-5 border-t border-stone-200">
                   {service.details.map((detail) => (
                     <li
                       key={detail}
-                      className="flex items-center gap-2 text-sm text-slate-500"
+                      className="flex items-center gap-2 text-sm text-stone-400"
                     >
-                      <span className="h-1 w-1 rounded-full bg-gold-500/60 shrink-0" />
+                      <span className="h-1 w-1 rounded-full bg-stone-400 shrink-0" />
                       {detail}
                     </li>
                   ))}
