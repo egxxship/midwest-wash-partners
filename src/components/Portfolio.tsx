@@ -6,18 +6,18 @@ const projects = [
     location: "Illinois",
     status: "Active",
     type: "IBA / Self-Serve",
-    scope: "Acquisition, revamp & ongoing management",
+    scope: "Acquisition, full revamp & ongoing management",
     description:
-      "Acquired underperforming asset on strong real estate. Executed full mechanical and cosmetic revamp, implemented membership program, and transitioned to tech-enabled operations with LPR integration.",
+      "Acquired an underperforming wash on strong real estate. Executed a full mechanical and cosmetic overhaul, implemented a modern membership program with LPR, and transitioned to tech-enabled operations. Now under active principal-level management.",
   },
   {
     name: "Mike's Express Wash",
     location: "Illinois",
     status: "Active",
     type: "In-Bay Automatic",
-    scope: "Equipment, service & operational consulting",
+    scope: "Equipment, chemical supply & operational consulting",
     description:
-      "Ongoing equipment service and chemical supply relationship. Providing technical maintenance, wash quality optimization, and operational consulting to drive membership growth and margin improvement.",
+      "Ongoing equipment service and chemical supply engagement. Providing technical maintenance, wash quality optimization, and hands-on operational consulting to drive membership growth and improve per-car economics.",
   },
   {
     name: "Princeton Development",
@@ -26,7 +26,7 @@ const projects = [
     type: "Ground-Up Development",
     scope: "Full lifecycle — site selection through build-out",
     description:
-      "Active ground-up development project demonstrating the full vertical integration model. Managing site entitlement, architectural design, equipment specification, and construction oversight.",
+      "Active ground-up development demonstrating the full vertical integration model. Managing site entitlement, architectural design, equipment specification, and construction oversight from dirt to doors.",
   },
 ];
 
@@ -43,11 +43,13 @@ export default function Portfolio() {
             Portfolio
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
-            Active & In-Process Projects
+            Active &amp; In-Process Projects
           </h2>
           <p className="text-lg text-slate-400 leading-relaxed">
-            Our portfolio spans acquisitions, ground-up development, and ongoing
-            management engagements across Illinois and the broader Midwest.
+            Our portfolio spans acquisitions, ground-up development,
+            refurbishments, and ongoing management engagements across Illinois
+            and the broader Midwest. Results for active projects are being
+            tracked and will be published as they mature.
           </p>
         </div>
 
@@ -118,7 +120,7 @@ export default function Portfolio() {
             href="#contact"
             className="inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 font-medium transition-colors"
           >
-            Interested in our pipeline? Let's talk
+            Have a site, a wash, or a question? Let&apos;s talk
             <ArrowUpRight size={16} />
           </a>
         </div>

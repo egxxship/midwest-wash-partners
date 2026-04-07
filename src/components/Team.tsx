@@ -2,34 +2,34 @@ const team = [
   {
     name: "Ian Cardosi",
     role: "Managing Partner",
-    bio: "Ian leads the firm's strategy, partnerships, and day-to-day decision-making across every project. A hands-on operator with a deep construction background and direct experience owning and operating active car wash locations, he sets the vision for each acquisition and development while staying close to the work — from deal sourcing and partner relations to equipment commissioning and field ops. Ian's dual perspective as both builder and business leader ensures every project is engineered for real-world durability and long-term profitability.",
+    bio: "Ian runs the show. He sets the strategic direction for the firm, manages key partnerships, and stays close to every project — from deal sourcing through equipment commissioning and daily field ops. He comes from a deep construction background and owns and operates active car wash locations himself. Ian's the guy who'll be on-site at 6 AM troubleshooting a pump and in the conference room by noon closing a deal. That dual perspective — builder and business operator — is what makes the whole platform work.",
     specialties: [
-      "Strategic Leadership",
+      "Strategic Leadership & Deal Sourcing",
       "Partner & Investor Relations",
-      "Construction & Site Development",
-      "Active Wash Operations",
+      "Construction & Field Operations",
+      "Active Wash Ownership & Operations",
     ],
   },
   {
     name: "Steve",
     role: "Lead Architect & Project Management",
-    bio: "Steve is the lead architect behind our development projects, bringing extensive commercial design experience to every engagement. He has designed several modern car wash facilities and leads the full project management lifecycle — from initial concept and architectural planning through procurement, permitting, and construction oversight. Steve ensures that each facility is optimized for throughput, customer experience, and long-term maintainability.",
+    bio: "Steve designs the washes and runs the builds. He brings years of commercial architecture experience and has designed multiple modern car wash facilities from the ground up. He owns the full project management lifecycle — concept, architectural plans, procurement, permitting, and construction oversight. If it's getting built, Steve's fingerprints are on every drawing and every punchlist.",
     specialties: [
-      "Commercial Architecture",
-      "Car Wash Facility Design",
-      "Project Management",
-      "Procurement & Permitting",
+      "Commercial Architecture & Facility Design",
+      "Project Management & GC Oversight",
+      "Equipment Procurement & Specification",
+      "Permitting & Construction Administration",
     ],
   },
   {
     name: "Ezra",
     role: "Operations & Development",
-    bio: "Ezra drives site selection, capital formation, financing strategy, and operational scaling. With a background in sell-side investment banking and a track record building multi-location service businesses — including a commercial laundromat chain and pickup-and-delivery service across the Chicago metro — he manages the analytical engine behind every deal, from initial underwriting and financial modeling through stabilized operations and ongoing performance optimization.",
+    bio: "Ezra handles the numbers and the growth. He drives site selection, capital formation, financing, and operational strategy across the portfolio. Before car wash, he built and scaled a commercial laundromat chain and a pickup-and-delivery service across Chicagoland, and spent time in sell-side investment banking. He runs the analytical engine behind every deal — underwriting, financial modeling, KPI tracking, and performance optimization — and manages the fractional CFO function for managed properties.",
     specialties: [
       "Site Selection & Acquisition",
-      "Capital Formation & Financing",
-      "Financial Modeling & M&A",
-      "Operations & Scaling",
+      "Capital Formation & Deal Structuring",
+      "Financial Modeling & KPI Analytics",
+      "Fractional CFO & Operational Scaling",
     ],
   },
 ];
@@ -46,12 +46,12 @@ export default function Team() {
             Leadership
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
-            Operators, Not Consultants
+            We Build What We Sell
           </h2>
           <p className="text-lg text-slate-400 leading-relaxed">
-            Our team combines hands-on operational experience with financial
-            rigor. We've built, managed, and scaled the types of businesses we
-            advise on — and we put our own capital alongside yours.
+            No ivory tower. No slide decks without calluses. Our team has built,
+            bought, operated, and scaled the kinds of businesses we work on
+            every day — and we put our own money alongside yours.
           </p>
         </div>
 
@@ -72,11 +72,9 @@ export default function Team() {
               </div>
 
               <div className="p-8">
-                <div className="flex items-center justify-between mb-1">
-                  <h3 className="text-xl font-bold text-white">
-                    {member.name}
-                  </h3>
-                </div>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  {member.name}
+                </h3>
                 <p className="text-sm font-medium text-gold-400 mb-4">
                   {member.role}
                 </p>

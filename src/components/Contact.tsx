@@ -4,10 +4,11 @@ import { useState } from "react";
 import { Send, Phone, Mail, MapPin } from "lucide-react";
 
 const interestOptions = [
+  "I want to build a new car wash",
+  "I need to refurbish or upgrade my wash",
+  "I need consulting, service, or chemical supply",
+  "I'm interested in selling my wash property",
   "I want to invest in car washes (LP)",
-  "I want to build a car wash",
-  "I need consulting / optimization help",
-  "I'm interested in equipment & service",
   "Other",
 ];
 
@@ -42,12 +43,13 @@ export default function Contact() {
               Get in Touch
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
-              Let's Discuss Your Project
+              Let&apos;s Talk About Your Wash
             </h2>
             <p className="text-lg text-slate-400 leading-relaxed mb-10">
-              Whether you're an investor looking for high-yield car wash
-              opportunities, a landowner exploring development, or an existing
-              operator seeking optimization — we'd like to hear from you.
+              Whether you&apos;re looking to build a new wash, refurbish an
+              existing site, optimize your operations, or explore selling your
+              property — we&apos;d like to hear from you. No pitch deck
+              required.
             </p>
 
             {/* Contact details */}
@@ -58,10 +60,11 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-white">
-                    Midwest Coverage
+                    Midwest-Focused
                   </p>
                   <p className="text-sm text-slate-400">
-                    Illinois · Indiana · Iowa · Wisconsin
+                    Based in Illinois. Active across the Midwest. Consulting
+                    available nationwide.
                   </p>
                 </div>
               </div>
@@ -99,7 +102,7 @@ export default function Contact() {
                   Message Sent
                 </h3>
                 <p className="text-slate-400">
-                  We'll be in touch within one business day.
+                  We&apos;ll be in touch within one business day.
                 </p>
               </div>
             ) : (
@@ -157,7 +160,7 @@ export default function Contact() {
                 {/* Interest */}
                 <div>
                   <label className="block text-sm font-medium text-slate-300 mb-1.5">
-                    I'm Interested In *
+                    I&apos;m Interested In *
                   </label>
                   <select
                     required

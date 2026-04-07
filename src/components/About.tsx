@@ -5,25 +5,25 @@ const pillars = [
     icon: Target,
     title: "The Anti-Tunnel Thesis",
     description:
-      "While the industry chases $5M express tunnels in saturated metro markets, we focus on high-yield In-Bay Automatics and self-serve hybrids in secondary markets — capturing strong local demand with a fraction of the capital.",
+      "While the industry pours capital into express tunnels in saturated markets, we target high-yield IBAs and self-serve hybrids in secondary markets — capturing strong local demand at a fraction of the build cost. Our sites routinely target 40–50% EBITDA margins and ~20% cash-on-cash returns with significantly less capital at risk.",
   },
   {
     icon: Layers,
     title: "Vertically Integrated",
     description:
-      "Development feeds Service. Service feeds Chemicals. All of it feeds a highly profitable asset portfolio. By capturing value at every stage, we generate revenue multiples traditionally reserved for express tunnels.",
+      "Development feeds Service. Service feeds Chemicals. All of it feeds a profitable asset portfolio. By capturing value at every stage — from the dirt to the soap dispenser — we generate returns traditionally reserved for operators running $5M tunnels.",
   },
   {
     icon: Shield,
     title: "Low-Labor, High-Margin",
     description:
-      "Our operations are built around the automated nature of IBAs and self-serve bays. Minimal headcount, tech-enabled memberships via LPR and mobile apps, and sticky recurring revenue.",
+      "IBAs and self-serve bays run lean by design. We layer on tech-enabled memberships via license plate recognition and mobile apps to build sticky, recurring revenue — all with minimal headcount and overhead.",
   },
   {
     icon: TrendingUp,
     title: "Operator-Led, Not Spreadsheet-Led",
     description:
-      "We're not passive capital deployers. We bring an operational pedigree from scaling multi-location service businesses, paired with sell-side banking rigor on financial modeling, capital allocation, and deal structuring.",
+      "We're not consultants who've never gotten their hands dirty. We own and operate active washes. We've scaled multi-location service businesses from scratch. We also bring sell-side banking rigor to every financial model, capital stack, and deal structure — but the foundation is operational, not theoretical.",
   },
 ];
 
@@ -44,10 +44,12 @@ export default function About() {
             The Contrarian Cash Cow
           </h2>
           <p className="text-lg text-slate-400 leading-relaxed">
-            The car wash industry is dominated by private equity firms deploying
-            massive capital into express friction tunnels on expensive metro
-            corners. We see the bigger opportunity in the spaces they ignore —
-            and we've built an ecosystem to capture it end-to-end.
+            The car wash industry is overrun with private equity shops deploying
+            $4–6M into express friction tunnels on oversaturated metro corners —
+            then fighting each other on price. We play a different game. We build
+            high-margin In-Bay Automatics and self-serve hybrids in secondary
+            markets where the math actually works, and we capture value at every
+            stage of the lifecycle.
           </p>
         </div>
 
@@ -106,8 +108,8 @@ export default function About() {
             ))}
           </div>
           <p className="mt-6 text-sm text-slate-500">
-            Every stage feeds the next. Every stage generates revenue. That's
-            what vertical integration looks like in car wash.
+            Every stage feeds the next. Every stage generates revenue.
+            That&apos;s what vertical integration looks like in car wash.
           </p>
         </div>
       </div>

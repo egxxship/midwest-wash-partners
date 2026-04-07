@@ -1,4 +1,4 @@
-import { ArrowRight, Building2, MapPin, Wrench } from "lucide-react";
+import { ArrowRight, TrendingUp, BarChart3, Wrench } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -23,24 +23,25 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-1.5 mb-8">
             <span className="h-2 w-2 rounded-full bg-gold-400 animate-pulse" />
             <span className="text-xs font-semibold text-gold-400 uppercase tracking-wider">
-              Vertically Integrated Car Wash Development
+              Turnkey Car Wash Development &amp; Operations
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-6">
-            We Build, Own &amp; Operate{" "}
+            We Build, Equip &amp; Optimize{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600">
               High-Yield Car Washes
             </span>{" "}
-            Across the Midwest
+            — So You Don&apos;t Have To
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
-            From site selection and capital formation to equipment procurement,
-            grand opening, and ongoing management — we deliver the full lifecycle
-            of car wash development. One partner. Every stage.
+            Whether you&apos;re breaking ground on a new site, refurbishing an
+            aging wash, or trying to squeeze more profit out of an existing
+            operation — we handle the full lifecycle. Site selection. Equipment.
+            Chemicals. Service. Management. One call.
           </p>
 
           {/* CTAs */}
@@ -49,7 +50,7 @@ export default function Hero() {
               href="#contact"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-gold-500 px-8 py-4 text-base font-semibold text-navy-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/25"
             >
-              Discuss Your Project
+              Start Your Project
               <ArrowRight size={18} />
             </a>
             <a
@@ -64,20 +65,22 @@ export default function Hero() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10 border-t border-navy-800">
             <div className="flex items-center gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-navy-800 text-gold-400">
-                <Building2 size={22} />
+                <TrendingUp size={22} />
               </div>
               <div>
-                <p className="text-2xl font-bold text-white">3+</p>
-                <p className="text-sm text-slate-400">Active Wash Locations</p>
+                <p className="text-2xl font-bold text-white">40–50%</p>
+                <p className="text-sm text-slate-400">Target EBITDA Margins</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-navy-800 text-gold-400">
-                <MapPin size={22} />
+                <BarChart3 size={22} />
               </div>
               <div>
-                <p className="text-2xl font-bold text-white">IL & Midwest</p>
-                <p className="text-sm text-slate-400">Target Markets</p>
+                <p className="text-2xl font-bold text-white">~20%</p>
+                <p className="text-sm text-slate-400">
+                  Target Cash-on-Cash Returns
+                </p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -87,7 +90,7 @@ export default function Hero() {
               <div>
                 <p className="text-2xl font-bold text-white">Full Stack</p>
                 <p className="text-sm text-slate-400">
-                  Dev · Equip · Service · Ops
+                  Build · Equip · Service · Manage
                 </p>
               </div>
             </div>
