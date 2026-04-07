@@ -1,23 +1,12 @@
 const team = [
   {
-    name: "Ezra",
-    role: "Head of Development",
-    bio: "Leads site selection, capital formation, financing strategy, and long-term growth. Ezra brings a background in sell-side investment banking and a track record of scaling multi-location service businesses — including a commercial laundromat chain and pickup-and-delivery service across the Chicago metro. His analytical approach to real estate development, zoning, and capital allocation drives every deal from initial underwriting through stabilized operations.",
-    specialties: [
-      "Site Selection & Acquisition",
-      "Capital Formation & Financing",
-      "Operations Strategy",
-      "Financial Modeling & M&A",
-    ],
-  },
-  {
     name: "Ian Cardosi",
-    role: "Infrastructure & Field Operations",
-    bio: "Ian is a hands-on infrastructure engineer with a deep construction background and direct experience owning and operating active car wash locations. He oversees all technical field operations — from equipment installation and commissioning to preventative maintenance and emergency service. Ian's dual perspective as both builder and operator ensures that every project is engineered for real-world durability and operational efficiency.",
+    role: "Managing Partner",
+    bio: "Ian leads the firm's strategy, partnerships, and day-to-day decision-making across every project. A hands-on operator with a deep construction background and direct experience owning and operating active car wash locations, he sets the vision for each acquisition and development while staying close to the work — from deal sourcing and partner relations to equipment commissioning and field ops. Ian's dual perspective as both builder and business leader ensures every project is engineered for real-world durability and long-term profitability.",
     specialties: [
+      "Strategic Leadership",
+      "Partner & Investor Relations",
       "Construction & Site Development",
-      "Equipment Installation",
-      "Preventative Maintenance",
       "Active Wash Operations",
     ],
   },
@@ -30,6 +19,17 @@ const team = [
       "Car Wash Facility Design",
       "Project Management",
       "Procurement & Permitting",
+    ],
+  },
+  {
+    name: "Ezra",
+    role: "Operations & Development",
+    bio: "Ezra drives site selection, capital formation, financing strategy, and operational scaling. With a background in sell-side investment banking and a track record building multi-location service businesses — including a commercial laundromat chain and pickup-and-delivery service across the Chicago metro — he manages the analytical engine behind every deal, from initial underwriting and financial modeling through stabilized operations and ongoing performance optimization.",
+    specialties: [
+      "Site Selection & Acquisition",
+      "Capital Formation & Financing",
+      "Financial Modeling & M&A",
+      "Operations & Scaling",
     ],
   },
 ];
