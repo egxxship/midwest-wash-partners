@@ -1,98 +1,89 @@
 import { Phone, Mail } from "lucide-react";
 
 const serviceLinks = [
-  { label: "Site Selection", href: "#capabilities" },
-  { label: "Development & Build", href: "#capabilities" },
-  { label: "Acquisitions & Revamps", href: "#capabilities" },
-  { label: "Consulting & Financial Ops", href: "#capabilities" },
-  { label: "Equipment & Service", href: "#capabilities" },
-  { label: "Soap & Chemicals", href: "#capabilities" },
+  "Site Selection",
+  "Development & Build",
+  "Acquisitions & Revamps",
+  "Consulting & Financial Ops",
+  "Equipment & Service",
+  "Soap & Chemicals",
 ];
 
 const companyLinks = [
-  { label: "About / Our Thesis", href: "#about" },
   { label: "How It Works", href: "#process" },
+  { label: "Capabilities", href: "#capabilities" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Team", href: "#team" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
 
-const serviceAreas = [
-  "Illinois",
-  "Indiana",
-  "Iowa",
-  "Wisconsin",
-  "Midwest Region",
-  "Nationwide (Consulting)",
-];
-
 export default function Footer() {
   return (
-    <footer className="relative border-t border-navy-800">
-      <div className="absolute inset-0 bg-navy-950" />
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
-          {/* Brand column */}
+    <footer className="border-t border-grey-200 bg-grey-50">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+          {/* Brand */}
           <div>
-            <a href="#" className="flex items-center gap-3 mb-5">
-              <div className="h-9 w-9 rounded-md bg-gradient-to-br from-gold-500 to-gold-600 flex items-center justify-center text-navy-950 font-bold text-sm">
+            <a href="#" className="flex items-center gap-2.5 mb-4">
+              <div className="h-8 w-8 rounded-md bg-rust-600 flex items-center justify-center text-white font-bold text-xs">
                 MW
               </div>
-              <span className="text-sm font-semibold text-white">
+              <span className="text-sm font-semibold text-grey-900">
                 Midwest Wash Partners
               </span>
             </a>
-            <p className="text-sm text-slate-500 leading-relaxed mb-5">
-              Vertically integrated car wash development, equipment, service,
-              and management across the Midwest.
+            <p className="text-sm text-grey-400 leading-relaxed mb-4">
+              Turnkey car wash development, equipment, service, and management.
             </p>
-            <div className="space-y-2">
+            <div className="space-y-1.5">
               <a
                 href="tel:+11234567890"
-                className="flex items-center gap-2 text-sm text-slate-400 hover:text-gold-400 transition-colors"
+                className="flex items-center gap-2 text-sm text-grey-500 hover:text-rust-600 transition-colors"
               >
-                <Phone size={14} />
+                <Phone size={13} />
                 (123) 456-7890
               </a>
               <a
                 href="mailto:info@midwestwashpartners.com"
-                className="flex items-center gap-2 text-sm text-slate-400 hover:text-gold-400 transition-colors"
+                className="flex items-center gap-2 text-sm text-grey-500 hover:text-rust-600 transition-colors"
               >
-                <Mail size={14} />
+                <Mail size={13} />
                 info@midwestwashpartners.com
               </a>
             </div>
           </div>
 
-          {/* Services column */}
+          {/* Capabilities */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">
+            <h4 className="text-sm font-semibold text-grey-900 mb-3">
               Capabilities
             </h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               {serviceLinks.map((link) => (
-                <li key={link.label}>
+                <li key={link}>
                   <a
-                    href={link.href}
-                    className="text-sm text-slate-500 hover:text-slate-300 transition-colors"
+                    href="#capabilities"
+                    className="text-sm text-grey-400 hover:text-grey-600 transition-colors"
                   >
-                    {link.label}
+                    {link}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Company column */}
+          {/* Company */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">Company</h4>
-            <ul className="space-y-2.5">
+            <h4 className="text-sm font-semibold text-grey-900 mb-3">
+              Company
+            </h4>
+            <ul className="space-y-2">
               {companyLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-slate-500 hover:text-slate-300 transition-colors"
+                    className="text-sm text-grey-400 hover:text-grey-600 transition-colors"
                   >
                     {link.label}
                   </a>
@@ -101,14 +92,21 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Service areas column */}
+          {/* Service areas */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">
+            <h4 className="text-sm font-semibold text-grey-900 mb-3">
               Service Areas
             </h4>
-            <ul className="space-y-2.5">
-              {serviceAreas.map((area) => (
-                <li key={area} className="text-sm text-slate-500">
+            <ul className="space-y-2">
+              {[
+                "Illinois",
+                "Indiana",
+                "Iowa",
+                "Wisconsin",
+                "Midwest Region",
+                "Nationwide (Consulting)",
+              ].map((area) => (
+                <li key={area} className="text-sm text-grey-400">
                   {area}
                 </li>
               ))}
@@ -116,13 +114,12 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="pt-8 border-t border-navy-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-slate-600">
+        <div className="pt-6 border-t border-grey-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-xs text-grey-400">
             &copy; {new Date().getFullYear()} Midwest Wash Partners. All rights
             reserved.
           </p>
-          <p className="text-xs text-slate-700">
+          <p className="text-xs text-grey-300">
             Based in Illinois. Built for the Midwest.
           </p>
         </div>

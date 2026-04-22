@@ -12,186 +12,130 @@ const services = [
   {
     icon: MapPin,
     title: "Site Selection",
-    subtitle: "Find the Moat",
     description:
-      "We identify high-traffic, defensible locations in secondary markets where IBAs can dominate. Our process covers traffic counts, competitive mapping, demographic analysis, and full zoning navigation — from initial feasibility through entitlement and permit.",
-    details: [
-      "Traffic & demographic analysis",
-      "Competitive landscape mapping",
-      "Zoning & entitlement support",
-      "Site feasibility & pro forma modeling",
-    ],
+      "High-traffic, defensible locations in secondary markets. Traffic counts, competitive mapping, zoning navigation, and full feasibility.",
   },
   {
     icon: HardHat,
     title: "Development & Build-to-Suit",
-    subtitle: "Dirt to Grand Opening",
     description:
-      "We handle the full development cycle: concept design, architectural plans, equipment specification and procurement, general contracting oversight, and grand opening strategy. We build turnkey spec washes ready to wash cars on day one.",
-    details: [
-      "Concept design & architecture",
-      "Equipment specification & procurement",
-      "GC oversight & project management",
-      "Grand opening playbook",
-    ],
+      "Concept through grand opening — architectural design, equipment procurement, GC oversight, and turnkey delivery.",
   },
   {
     icon: Building,
     title: "Acquisitions & Revamps",
-    subtitle: "Zombie Revival",
     description:
-      "We actively acquire underperforming and distressed car wash properties sitting on strong real estate. Our playbook: acquire the asset, execute a full mechanical and cosmetic revamp, implement modern membership programs, and transition to tech-enabled operations. If you're an owner looking to exit, we'd like to talk.",
-    details: [
-      "Distressed property sourcing & underwriting",
-      "Full mechanical & cosmetic revamp",
-      "Membership program implementation",
-      "Operational transition & stabilization",
-    ],
+      "We buy underperforming washes on strong real estate, execute full revamps, and implement modern membership programs. Owners looking to exit — talk to us.",
   },
   {
     icon: BarChart3,
     title: "Consulting & Financial Ops",
-    subtitle: "Optimize Everything",
     description:
-      "We help existing operators find margin they didn't know they had. Our fractional CFO and analytics function tracks the KPIs that matter — wash-per-car revenue, chemical cost per car, equipment uptime, membership conversion rate, churn, and average revenue per member — then builds the playbook to move them.",
-    details: [
-      "KPI dashboarding (WPC, ARPM, uptime, churn)",
-      "Fractional bookkeeping & CFO services",
-      "Chemical & equipment optimization",
-      "Marketing & membership growth strategy",
-    ],
+      "Fractional CFO, KPI dashboarding (WPC, ARPM, uptime, churn), chemical optimization, and membership growth strategy.",
   },
   {
     icon: Settings,
     title: "Management",
-    subtitle: "Principal-Level Ops",
     description:
-      "We provide ongoing, principal-level operational management — not absentee oversight. Our team manages day-to-day operations, vendor relationships, and continuous improvement with the intensity of an owner-operator. Because that's what we are.",
-    details: [
-      "Day-to-day operations management",
-      "Vendor & supplier management",
-      "Performance monitoring & KPI reporting",
-      "Continuous improvement programs",
-    ],
+      "Principal-level operational management — not absentee oversight. We run it with the intensity of an owner-operator. Because we are one.",
   },
   {
     icon: Wrench,
     title: "Equipment & Service",
-    subtitle: "The Trojan Horse",
     description:
-      "Our technical services arm handles preventative maintenance, installation, and ongoing support across leading equipment platforms including Petit Auto Wash and Dencar Systems. This is our entry point into operator relationships — once we're servicing your equipment, you see the full value of our platform.",
-    details: [
-      "Preventative maintenance programs",
-      "Equipment installation & commissioning",
-      "Emergency repair & technical support",
-      "Multi-platform equipment expertise",
-    ],
+      "Preventative maintenance, installation, commissioning, and emergency repair across platforms including Petit Auto Wash and Dencar Systems.",
   },
   {
     icon: Droplets,
     title: "Soap & Chemicals",
-    subtitle: "Chemistry That Performs",
     description:
-      "We don't sell a proprietary chemical line — we do something more useful. We engineer the right chemical program for your specific equipment, water conditions, and customer expectations. The right chemistry at the right dilution ratios, dialed in and maintained. Clean cars, lower cost per wash, fewer callbacks.",
-    details: [
-      "Chemical program engineering",
-      "Water condition & dilution optimization",
-      "Wash quality management",
-      "Recurring supply & replenishment",
-    ],
+      "We engineer the right chemical program for your equipment and water conditions. Right chemistry, right dilution, maintained and supplied.",
   },
+];
+
+const partners = [
+  "Petit Auto Wash",
+  "Dencar Systems",
+  "Cat Pumps",
+  "Hydra-Flex",
+  "Innovative Control Systems",
 ];
 
 export default function Capabilities() {
   return (
-    <section id="capabilities" className="relative py-24 lg:py-32">
-      <div className="absolute inset-0 bg-navy-950" />
-
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+    <section id="capabilities" className="relative py-20 lg:py-28">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
-        <div className="max-w-3xl mb-16">
-          <p className="text-sm font-semibold text-gold-400 uppercase tracking-wider mb-3">
+        <div className="max-w-2xl mb-14">
+          <p className="text-sm font-semibold text-rust-600 uppercase tracking-wider mb-2">
             Capabilities
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-grey-900 tracking-tight mb-4">
             A Car Wash in a Box
           </h2>
-          <p className="text-lg text-slate-400 leading-relaxed">
-            Building from scratch. Refurbishing a tired wash. Optimizing an
-            existing operation. Acquiring a distressed property. Whatever the
-            starting point, we bring the expertise, equipment, chemicals, and
-            boots on the ground to get it running right.
+          <p className="text-grey-500 leading-relaxed">
+            New build, refurb, acquisition, or optimization — we bring the
+            expertise, equipment, chemicals, and boots on the ground.
           </p>
         </div>
 
-        {/* Services grid — top row of 3, then 2x2 grid for remaining 4 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Value chain flow */}
+        <div className="mb-12 flex flex-wrap items-center gap-2">
+          {[
+            "Site Selection",
+            "Development",
+            "Equipment",
+            "Chemicals",
+            "Service",
+            "Management",
+          ].map((step, i) => (
+            <div key={step} className="flex items-center gap-2">
+              <span className="inline-flex items-center rounded-full bg-grey-100 px-3 py-1 text-xs font-semibold text-grey-600">
+                {step}
+              </span>
+              {i < 5 && <span className="text-grey-300">→</span>}
+            </div>
+          ))}
+        </div>
+
+        {/* Services grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((service) => {
             const Icon = service.icon;
             return (
               <div
                 key={service.title}
-                className="group relative rounded-2xl border border-navy-700/50 bg-navy-900/50 p-8 hover:border-gold-500/30 transition-all duration-300 flex flex-col"
+                className="group rounded-xl border border-grey-200 bg-white p-6 hover:border-rust-200 hover:shadow-sm transition-all"
               >
-                {/* Icon */}
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-gold-400 mb-5 group-hover:bg-gold-500/15 transition-colors">
-                  <Icon size={24} />
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-rust-50 text-rust-600 mb-4">
+                  <Icon size={20} />
                 </div>
-
-                {/* Content */}
-                <p className="text-xs font-semibold text-gold-500 uppercase tracking-wider mb-1">
-                  {service.subtitle}
-                </p>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-base font-bold text-grey-900 mb-2">
                   {service.title}
                 </h3>
-                <p className="text-sm text-slate-400 leading-relaxed mb-6 flex-1">
+                <p className="text-sm text-grey-500 leading-relaxed">
                   {service.description}
                 </p>
-
-                {/* Detail list */}
-                <ul className="space-y-2 pt-5 border-t border-navy-700/50">
-                  {service.details.map((detail) => (
-                    <li
-                      key={detail}
-                      className="flex items-center gap-2 text-sm text-slate-500"
-                    >
-                      <span className="h-1 w-1 rounded-full bg-gold-500/60 shrink-0" />
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
               </div>
             );
           })}
         </div>
 
-        {/* Partner / Manufacturer logo strip */}
-        <div className="mt-16 rounded-2xl border border-navy-700/50 bg-navy-800/20 p-8 lg:p-10">
-          <p className="text-sm font-semibold text-gold-400 uppercase tracking-wider mb-6 text-center">
+        {/* Partner strip */}
+        <div className="mt-12 pt-8 border-t border-grey-200">
+          <p className="text-xs font-semibold text-grey-400 uppercase tracking-wider mb-4 text-center">
             Equipment &amp; Distribution Partners
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-14">
-            {[
-              "Petit Auto Wash",
-              "Dencar Systems",
-              "Cat Pumps",
-              "Hydra-Flex",
-              "Innovative Control Systems",
-            ].map((partner) => (
-              <div
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            {partners.map((partner) => (
+              <span
                 key={partner}
-                className="flex items-center justify-center h-12 px-6 rounded-lg border border-navy-700/30 bg-navy-900/40 text-sm font-medium text-slate-400"
+                className="inline-flex rounded-full border border-grey-200 bg-grey-50 px-4 py-1.5 text-xs font-medium text-grey-500"
               >
                 {partner}
-              </div>
+              </span>
             ))}
           </div>
-          <p className="mt-5 text-xs text-slate-600 text-center">
-            Manufacturer-agnostic sourcing. We spec the right equipment for your
-            site, market, and budget — not the brand that pays us the highest
-            margin.
-          </p>
         </div>
       </div>
     </section>

@@ -24,118 +24,103 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would POST to an API endpoint
     setSubmitted(true);
   };
 
   return (
-    <section id="contact" className="relative py-24 lg:py-32">
-      <div className="absolute inset-0 bg-navy-900" />
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-950/50 to-transparent" />
-      {/* Accent glow */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-gold-500/5 blur-[120px]" />
-
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+    <section id="contact" className="relative py-20 lg:py-28">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Left — copy */}
           <div>
-            <p className="text-sm font-semibold text-gold-400 uppercase tracking-wider mb-3">
+            <p className="text-sm font-semibold text-rust-600 uppercase tracking-wider mb-2">
               Get in Touch
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-grey-900 tracking-tight mb-4">
               Let&apos;s Talk About Your Wash
             </h2>
-            <p className="text-lg text-slate-400 leading-relaxed mb-10">
-              Whether you&apos;re looking to build a new wash, refurbish an
-              existing site, optimize your operations, or explore selling your
-              property — we&apos;d like to hear from you. No pitch deck
-              required.
+            <p className="text-grey-500 leading-relaxed mb-8">
+              Building, refurbishing, optimizing, or selling — we&apos;d like to
+              hear from you. No pitch deck required.
             </p>
 
-            {/* Urgency / capacity */}
-            <div className="rounded-xl border border-gold-500/20 bg-gold-500/5 p-5 mb-10">
+            {/* Urgency */}
+            <div className="rounded-xl border border-rust-200 bg-rust-50 p-4 mb-8">
               <div className="flex items-start gap-3">
-                <Clock size={18} className="text-gold-400 shrink-0 mt-0.5" />
+                <Clock
+                  size={16}
+                  className="text-rust-600 shrink-0 mt-0.5"
+                />
                 <div>
-                  <p className="text-sm font-medium text-gold-400 mb-1">
+                  <p className="text-sm font-semibold text-rust-700 mb-0.5">
                     Limited Project Capacity
                   </p>
-                  <p className="text-sm text-slate-400">
-                    We take on 4–6 development projects per year to ensure
-                    principal-level attention on every build. If you&apos;re
-                    planning a 2026 or 2027 project, now is the time to start
-                    the conversation.
+                  <p className="text-sm text-rust-600/80">
+                    We take on 4–6 development projects per year. Planning for
+                    2026–2027? Now is the time to start the conversation.
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Contact details */}
-            <div className="space-y-5">
+            <div className="space-y-4">
               <a
                 href="tel:+11234567890"
-                className="flex items-center gap-4 group"
+                className="flex items-center gap-3 group"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-navy-800 text-gold-400 group-hover:bg-gold-500/15 transition-colors">
-                  <Phone size={18} />
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-grey-100 text-grey-500 group-hover:bg-rust-50 group-hover:text-rust-600 transition-colors">
+                  <Phone size={16} />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-white">Call Us</p>
-                  <p className="text-sm text-slate-400 group-hover:text-gold-400 transition-colors">
+                  <p className="text-sm font-medium text-grey-900">
                     (123) 456-7890
                   </p>
                 </div>
               </a>
               <a
                 href="mailto:info@midwestwashpartners.com"
-                className="flex items-center gap-4 group"
+                className="flex items-center gap-3 group"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-navy-800 text-gold-400 group-hover:bg-gold-500/15 transition-colors">
-                  <Mail size={18} />
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-grey-100 text-grey-500 group-hover:bg-rust-50 group-hover:text-rust-600 transition-colors">
+                  <Mail size={16} />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-white">Email</p>
-                  <p className="text-sm text-slate-400 group-hover:text-gold-400 transition-colors">
+                  <p className="text-sm font-medium text-grey-900">
                     info@midwestwashpartners.com
                   </p>
                 </div>
               </a>
-              <div className="flex items-center gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-navy-800 text-gold-400">
-                  <MapPin size={18} />
+              <div className="flex items-center gap-3">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-grey-100 text-grey-500">
+                  <MapPin size={16} />
                 </div>
-                <div>
-                  <p className="text-sm font-medium text-white">
-                    Midwest-Focused
-                  </p>
-                  <p className="text-sm text-slate-400">
-                    Based in Illinois. Active across the Midwest. Consulting
-                    available nationwide.
-                  </p>
-                </div>
+                <p className="text-sm text-grey-500">
+                  Based in Illinois. Active across the Midwest. Consulting
+                  nationwide.
+                </p>
               </div>
             </div>
           </div>
 
           {/* Right — form */}
-          <div className="rounded-2xl border border-navy-700/50 bg-navy-800/30 p-8">
+          <div className="rounded-xl border border-grey-200 bg-grey-50 p-6 lg:p-8">
             {submitted ? (
               <div className="flex flex-col items-center justify-center h-full text-center py-12">
-                <div className="h-16 w-16 rounded-full bg-emerald-500/10 flex items-center justify-center mb-4">
-                  <Send size={28} className="text-emerald-400" />
+                <div className="h-14 w-14 rounded-full bg-green-50 flex items-center justify-center mb-3">
+                  <Send size={24} className="text-green-600" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-lg font-bold text-grey-900 mb-1">
                   Message Sent
                 </h3>
-                <p className="text-slate-400">
+                <p className="text-sm text-grey-500">
                   We&apos;ll be in touch within one business day.
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
-                {/* Name */}
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-slate-300 mb-1.5">
+                  <label className="block text-sm font-medium text-grey-700 mb-1">
                     Full Name *
                   </label>
                   <input
@@ -145,15 +130,13 @@ export default function Contact() {
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
-                    className="w-full rounded-lg border border-navy-600 bg-navy-900/50 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-gold-500 focus:ring-1 focus:ring-gold-500/50 outline-none transition-colors"
+                    className="w-full rounded-lg border border-grey-200 bg-white px-3.5 py-2.5 text-sm text-grey-900 placeholder-grey-400 focus:border-rust-500 focus:ring-1 focus:ring-rust-500/30 outline-none transition-colors"
                     placeholder="John Smith"
                   />
                 </div>
-
-                {/* Email + Phone row */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-1.5">
+                    <label className="block text-sm font-medium text-grey-700 mb-1">
                       Email *
                     </label>
                     <input
@@ -163,12 +146,12 @@ export default function Contact() {
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full rounded-lg border border-navy-600 bg-navy-900/50 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-gold-500 focus:ring-1 focus:ring-gold-500/50 outline-none transition-colors"
+                      className="w-full rounded-lg border border-grey-200 bg-white px-3.5 py-2.5 text-sm text-grey-900 placeholder-grey-400 focus:border-rust-500 focus:ring-1 focus:ring-rust-500/30 outline-none transition-colors"
                       placeholder="john@example.com"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-1.5">
+                    <label className="block text-sm font-medium text-grey-700 mb-1">
                       Phone
                     </label>
                     <input
@@ -177,15 +160,13 @@ export default function Contact() {
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })
                       }
-                      className="w-full rounded-lg border border-navy-600 bg-navy-900/50 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-gold-500 focus:ring-1 focus:ring-gold-500/50 outline-none transition-colors"
+                      className="w-full rounded-lg border border-grey-200 bg-white px-3.5 py-2.5 text-sm text-grey-900 placeholder-grey-400 focus:border-rust-500 focus:ring-1 focus:ring-rust-500/30 outline-none transition-colors"
                       placeholder="(555) 123-4567"
                     />
                   </div>
                 </div>
-
-                {/* Interest */}
                 <div>
-                  <label className="block text-sm font-medium text-slate-300 mb-1.5">
+                  <label className="block text-sm font-medium text-grey-700 mb-1">
                     I&apos;m Interested In *
                   </label>
                   <select
@@ -194,7 +175,7 @@ export default function Contact() {
                     onChange={(e) =>
                       setFormData({ ...formData, interest: e.target.value })
                     }
-                    className="w-full rounded-lg border border-navy-600 bg-navy-900/50 px-4 py-3 text-sm text-white focus:border-gold-500 focus:ring-1 focus:ring-gold-500/50 outline-none transition-colors appearance-none"
+                    className="w-full rounded-lg border border-grey-200 bg-white px-3.5 py-2.5 text-sm text-grey-900 focus:border-rust-500 focus:ring-1 focus:ring-rust-500/30 outline-none transition-colors appearance-none"
                   >
                     <option value="" disabled>
                       Select an option...
@@ -206,33 +187,29 @@ export default function Contact() {
                     ))}
                   </select>
                 </div>
-
-                {/* Message */}
                 <div>
-                  <label className="block text-sm font-medium text-slate-300 mb-1.5">
+                  <label className="block text-sm font-medium text-grey-700 mb-1">
                     Tell Us About Your Project
                   </label>
                   <textarea
-                    rows={4}
+                    rows={3}
                     value={formData.message}
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    className="w-full rounded-lg border border-navy-600 bg-navy-900/50 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-gold-500 focus:ring-1 focus:ring-gold-500/50 outline-none transition-colors resize-none"
-                    placeholder="Location, budget range, timeline, or any other details..."
+                    className="w-full rounded-lg border border-grey-200 bg-white px-3.5 py-2.5 text-sm text-grey-900 placeholder-grey-400 focus:border-rust-500 focus:ring-1 focus:ring-rust-500/30 outline-none transition-colors resize-none"
+                    placeholder="Location, budget range, timeline..."
                   />
                 </div>
-
-                {/* Submit */}
                 <button
                   type="submit"
-                  className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-gold-500 px-6 py-3.5 text-sm font-semibold text-navy-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20"
+                  className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-rust-600 px-5 py-3 text-sm font-semibold text-white hover:bg-rust-700 transition-colors"
                 >
                   Send Message
-                  <Send size={16} />
+                  <Send size={15} />
                 </button>
-                <p className="text-xs text-slate-500 text-center">
-                  Your information is kept confidential and never shared.
+                <p className="text-xs text-grey-400 text-center">
+                  Confidential. Never shared.
                 </p>
               </form>
             )}

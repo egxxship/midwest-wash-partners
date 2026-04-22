@@ -2,92 +2,84 @@ const team = [
   {
     name: "Ian Cardosi",
     role: "Managing Partner",
-    bio: "Ian runs the show. He sets the strategic direction for the firm, manages key partnerships, and stays close to every project — from deal sourcing through equipment commissioning and daily field ops. He comes from a deep construction background and owns and operates active car wash locations himself. Ian's the guy who'll be on-site at 6 AM troubleshooting a pump and in the conference room by noon closing a deal. That dual perspective — builder and business operator — is what makes the whole platform work.",
+    bio: "Ian runs the show — strategic direction, key partnerships, and direct involvement in every project from deal sourcing through daily field ops. Deep construction background, active car wash owner-operator. On-site at 6 AM troubleshooting a pump, in the conference room by noon closing a deal.",
     specialties: [
-      "Strategic Leadership & Deal Sourcing",
-      "Partner & Investor Relations",
-      "Construction & Field Operations",
-      "Active Wash Ownership & Operations",
+      "Strategic Leadership",
+      "Construction & Field Ops",
+      "Active Wash Operations",
     ],
   },
   {
     name: "Steve",
     role: "Lead Architect & Project Management",
-    bio: "Steve designs the washes and runs the builds. He brings years of commercial architecture experience and has designed multiple modern car wash facilities from the ground up. He owns the full project management lifecycle — concept, architectural plans, procurement, permitting, and construction oversight. If it's getting built, Steve's fingerprints are on every drawing and every punchlist.",
+    bio: "Steve designs the washes and runs the builds. Years of commercial architecture, multiple car wash facilities designed from the ground up. Owns the full PM lifecycle — concept through punchlist. If it's getting built, Steve's fingerprints are on every drawing.",
     specialties: [
-      "Commercial Architecture & Facility Design",
-      "Project Management & GC Oversight",
-      "Equipment Procurement & Specification",
-      "Permitting & Construction Administration",
+      "Commercial Architecture",
+      "Project Management",
+      "Equipment Procurement",
     ],
   },
   {
     name: "Ezra",
     role: "Operations & Development",
-    bio: "Ezra handles the numbers and the growth. He drives site selection, capital formation, financing, and operational strategy across the portfolio. Before car wash, he built and scaled a commercial laundromat chain and a pickup-and-delivery service across Chicagoland, and spent time in sell-side investment banking. He runs the analytical engine behind every deal — underwriting, financial modeling, KPI tracking, and performance optimization — and manages the fractional CFO function for managed properties.",
+    bio: "Ezra handles the numbers and the growth — site selection, capital formation, financing, and operational strategy. Background in sell-side banking and scaling multi-location service businesses across Chicagoland. Runs the analytical engine and fractional CFO function.",
     specialties: [
-      "Site Selection & Acquisition",
-      "Capital Formation & Deal Structuring",
-      "Financial Modeling & KPI Analytics",
-      "Fractional CFO & Operational Scaling",
+      "Site Selection & M&A",
+      "Financial Modeling",
+      "Fractional CFO",
     ],
   },
 ];
 
 export default function Team() {
   return (
-    <section id="team" className="relative py-24 lg:py-32">
-      <div className="absolute inset-0 bg-navy-950" />
-
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+    <section id="team" className="relative py-20 lg:py-28">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
-        <div className="max-w-3xl mb-16">
-          <p className="text-sm font-semibold text-gold-400 uppercase tracking-wider mb-3">
+        <div className="max-w-2xl mb-14">
+          <p className="text-sm font-semibold text-rust-600 uppercase tracking-wider mb-2">
             Leadership
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-grey-900 tracking-tight mb-4">
             We Build What We Sell
           </h2>
-          <p className="text-lg text-slate-400 leading-relaxed">
-            No ivory tower. No slide decks without calluses. Our team has built,
-            bought, operated, and scaled the kinds of businesses we work on
-            every day — and we put our own money alongside yours.
+          <p className="text-grey-500 leading-relaxed">
+            No slide decks without calluses. Our team has built, bought, and
+            operated the kinds of businesses we work on every day.
           </p>
         </div>
 
         {/* Team grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {team.map((member) => (
             <div
               key={member.name}
-              className="group rounded-2xl border border-navy-700/50 bg-navy-900/40 overflow-hidden hover:border-gold-500/30 transition-all duration-300"
+              className="rounded-xl border border-grey-200 bg-white overflow-hidden hover:border-rust-200 hover:shadow-sm transition-all"
             >
               {/* Avatar placeholder */}
-              <div className="h-48 bg-gradient-to-br from-navy-800 to-navy-700 flex items-center justify-center">
-                <div className="h-24 w-24 rounded-full bg-navy-600/50 border-2 border-navy-500/30 flex items-center justify-center">
-                  <span className="text-3xl font-bold text-gold-400">
+              <div className="h-36 bg-grey-100 flex items-center justify-center">
+                <div className="h-20 w-20 rounded-full bg-white border border-grey-200 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-rust-600">
                     {member.name.charAt(0)}
                   </span>
                 </div>
               </div>
 
-              <div className="p-8">
-                <h3 className="text-xl font-bold text-white mb-1">
+              <div className="p-6">
+                <h3 className="text-base font-bold text-grey-900 mb-0.5">
                   {member.name}
                 </h3>
-                <p className="text-sm font-medium text-gold-400 mb-4">
+                <p className="text-sm font-medium text-rust-600 mb-3">
                   {member.role}
                 </p>
-                <p className="text-sm text-slate-400 leading-relaxed mb-6">
+                <p className="text-sm text-grey-500 leading-relaxed mb-4">
                   {member.bio}
                 </p>
-
-                {/* Specialties */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5">
                   {member.specialties.map((spec) => (
                     <span
                       key={spec}
-                      className="inline-flex rounded-full bg-navy-800 border border-navy-700/50 px-3 py-1 text-xs text-slate-400"
+                      className="inline-flex rounded-full bg-grey-100 px-2.5 py-0.5 text-xs text-grey-500"
                     >
                       {spec}
                     </span>

@@ -8,16 +8,16 @@ const projects = [
     type: "IBA / Self-Serve",
     scope: "Acquisition, full revamp & ongoing management",
     description:
-      "Acquired an underperforming wash on strong real estate. Executed a full mechanical and cosmetic overhaul, implemented a modern membership program with LPR, and transitioned to tech-enabled operations. Now under active principal-level management.",
+      "Acquired underperforming wash on strong real estate. Full mechanical and cosmetic overhaul, modern membership program with LPR, now under principal-level management.",
   },
   {
     name: "Mike's Express Wash",
     location: "Illinois",
     status: "Active",
     type: "In-Bay Automatic",
-    scope: "Equipment, chemical supply & operational consulting",
+    scope: "Equipment, chemical supply & consulting",
     description:
-      "Ongoing equipment service and chemical supply engagement. Providing technical maintenance, wash quality optimization, and hands-on operational consulting to drive membership growth and improve per-car economics.",
+      "Ongoing equipment service and chemical supply. Technical maintenance, wash quality optimization, and operational consulting driving membership growth.",
   },
   {
     name: "Princeton Development",
@@ -26,102 +26,86 @@ const projects = [
     type: "Ground-Up Development",
     scope: "Full lifecycle — site selection through build-out",
     description:
-      "Active ground-up development demonstrating the full vertical integration model. Managing site entitlement, architectural design, equipment specification, and construction oversight from dirt to doors.",
+      "Ground-up development project. Site entitlement, architectural design, equipment specification, and construction oversight — dirt to doors.",
   },
 ];
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="relative py-24 lg:py-32">
-      <div className="absolute inset-0 bg-navy-900" />
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-950/40 to-transparent" />
-
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+    <section id="portfolio" className="relative py-20 lg:py-28 bg-grey-50">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
-        <div className="max-w-3xl mb-16">
-          <p className="text-sm font-semibold text-gold-400 uppercase tracking-wider mb-3">
+        <div className="max-w-2xl mb-14">
+          <p className="text-sm font-semibold text-rust-600 uppercase tracking-wider mb-2">
             Portfolio
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-grey-900 tracking-tight mb-4">
             Active &amp; In-Process Projects
           </h2>
-          <p className="text-lg text-slate-400 leading-relaxed">
-            Our portfolio spans acquisitions, ground-up development,
-            refurbishments, and ongoing management engagements across Illinois
-            and the broader Midwest. Results for active projects are being
-            tracked and will be published as they mature.
+          <p className="text-grey-500 leading-relaxed">
+            Acquisitions, ground-up development, and management engagements
+            across Illinois and the Midwest.
           </p>
         </div>
 
         {/* Project cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {projects.map((project) => (
             <div
               key={project.name}
-              className="group rounded-2xl border border-navy-700/50 bg-navy-800/30 overflow-hidden hover:border-gold-500/30 transition-all duration-300"
+              className="bg-white rounded-xl border border-grey-200 p-6 hover:border-rust-200 hover:shadow-sm transition-all"
             >
-              {/* Card header */}
-              <div className="p-8 pb-0">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-700/50 text-gold-400">
-                    <Building size={22} />
-                  </div>
-                  <span
-                    className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold ${
-                      project.status === "Active"
-                        ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-                        : "bg-gold-500/10 text-gold-400 border border-gold-500/20"
-                    }`}
-                  >
-                    {project.status}
-                  </span>
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-grey-100 text-grey-500">
+                  <Building size={20} />
                 </div>
-
-                <h3 className="text-xl font-bold text-white mb-1">
-                  {project.name}
-                </h3>
-                <div className="flex items-center gap-1.5 text-sm text-slate-500 mb-4">
-                  <MapPin size={14} />
-                  {project.location}
-                </div>
+                <span
+                  className={`inline-flex rounded-full px-2.5 py-0.5 text-xs font-semibold ${
+                    project.status === "Active"
+                      ? "bg-green-50 text-green-700 border border-green-200"
+                      : "bg-rust-50 text-rust-700 border border-rust-200"
+                  }`}
+                >
+                  {project.status}
+                </span>
               </div>
 
-              {/* Card body */}
-              <div className="px-8 pb-8">
-                <div className="mb-4 space-y-2">
-                  <div className="flex items-start gap-2">
-                    <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider shrink-0 pt-0.5">
-                      Type
-                    </span>
-                    <span className="text-sm text-slate-300">
-                      {project.type}
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider shrink-0 pt-0.5">
-                      Scope
-                    </span>
-                    <span className="text-sm text-slate-300">
-                      {project.scope}
-                    </span>
-                  </div>
-                </div>
-                <p className="text-sm text-slate-400 leading-relaxed">
-                  {project.description}
-                </p>
+              <h3 className="text-base font-bold text-grey-900 mb-1">
+                {project.name}
+              </h3>
+              <div className="flex items-center gap-1 text-xs text-grey-400 mb-3">
+                <MapPin size={12} />
+                {project.location}
               </div>
+
+              <div className="text-xs text-grey-400 mb-1">
+                <span className="font-semibold uppercase tracking-wider">
+                  Type
+                </span>{" "}
+                {project.type}
+              </div>
+              <div className="text-xs text-grey-400 mb-3">
+                <span className="font-semibold uppercase tracking-wider">
+                  Scope
+                </span>{" "}
+                {project.scope}
+              </div>
+
+              <p className="text-sm text-grey-500 leading-relaxed">
+                {project.description}
+              </p>
             </div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 font-medium transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-rust-600 hover:text-rust-700 transition-colors"
           >
             Have a site, a wash, or a question? Let&apos;s talk
-            <ArrowUpRight size={16} />
+            <ArrowUpRight size={14} />
           </a>
         </div>
       </div>
