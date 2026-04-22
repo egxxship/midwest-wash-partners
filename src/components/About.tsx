@@ -30,18 +30,20 @@ const pillars = [
 export default function About() {
   return (
     <section id="about" className="relative py-24 lg:py-32">
-      <div className="absolute inset-0 bg-stone-50" />
+      {/* Background */}
+      <div className="absolute inset-0 bg-navy-900" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-950/50 to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-3xl mb-16">
-          <p className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-gold-400 uppercase tracking-wider mb-3">
             Our Thesis
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 tracking-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">
             The Contrarian Cash Cow
           </h2>
-          <p className="text-lg text-stone-500 leading-relaxed">
+          <p className="text-lg text-slate-400 leading-relaxed">
             The car wash industry is overrun with private equity shops deploying
             $4–6M into express friction tunnels on oversaturated metro corners —
             then fighting each other on price. We play a different game. We build
@@ -58,15 +60,15 @@ export default function About() {
             return (
               <div
                 key={pillar.title}
-                className="group rounded-2xl border border-stone-200 bg-white p-8 hover:border-stone-300 hover:shadow-sm transition-all duration-300"
+                className="group rounded-2xl border border-navy-700/50 bg-navy-800/30 p-8 hover:border-gold-500/30 hover:bg-navy-800/50 transition-all duration-300"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-stone-100 text-stone-700 mb-5 group-hover:bg-stone-200 transition-colors">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-500/10 text-gold-400 mb-5 group-hover:bg-gold-500/20 transition-colors">
                   <Icon size={24} />
                 </div>
-                <h3 className="text-xl font-bold text-stone-900 mb-3">
+                <h3 className="text-xl font-bold text-white mb-3">
                   {pillar.title}
                 </h3>
-                <p className="text-stone-500 leading-relaxed">
+                <p className="text-slate-400 leading-relaxed">
                   {pillar.description}
                 </p>
               </div>
@@ -75,8 +77,8 @@ export default function About() {
         </div>
 
         {/* Value chain visual */}
-        <div className="mt-16 rounded-2xl border border-stone-200 bg-white p-8 lg:p-12">
-          <p className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-4">
+        <div className="mt-16 rounded-2xl border border-navy-700/50 bg-navy-800/20 p-8 lg:p-12">
+          <p className="text-sm font-semibold text-gold-400 uppercase tracking-wider mb-4">
             The Value Chain
           </p>
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-0">
@@ -90,22 +92,22 @@ export default function About() {
             ].map((step, i) => (
               <div key={step} className="flex items-center gap-4 lg:flex-1">
                 <div className="flex items-center gap-3 lg:flex-1">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-900 text-white text-sm font-bold">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold-500/20 text-gold-400 text-sm font-bold">
                     {i + 1}
                   </span>
-                  <span className="text-sm font-medium text-stone-800 whitespace-nowrap">
+                  <span className="text-sm font-medium text-white whitespace-nowrap">
                     {step}
                   </span>
                 </div>
                 {i < 5 && (
-                  <span className="hidden lg:block text-stone-300 text-lg mx-2">
+                  <span className="hidden lg:block text-navy-600 text-lg mx-2">
                     →
                   </span>
                 )}
               </div>
             ))}
           </div>
-          <p className="mt-6 text-sm text-stone-400">
+          <p className="mt-6 text-sm text-slate-500">
             Every stage feeds the next. Every stage generates revenue.
             That&apos;s what vertical integration looks like in car wash.
           </p>
