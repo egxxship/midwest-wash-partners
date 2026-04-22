@@ -2,9 +2,10 @@ import { Phone, Mail } from "lucide-react";
 
 const serviceLinks = [
   "Site Selection",
+  "Capital Formation",
   "Development & Build",
   "Acquisitions & Revamps",
-  "Consulting & Financial Ops",
+  "Consulting & Fractional CFO",
   "Equipment & Service",
   "Soap & Chemicals",
 ];

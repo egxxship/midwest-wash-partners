@@ -6,6 +6,7 @@ import { Send, Phone, Mail, MapPin, Clock } from "lucide-react";
 const interestOptions = [
   "I want to build a new car wash",
   "I need to refurbish or upgrade my wash",
+  "I need help with financing or capital formation",
   "I need consulting, service, or chemical supply",
   "I'm interested in selling my wash property",
   "I want to invest in car washes (LP)",

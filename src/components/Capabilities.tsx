@@ -6,6 +6,7 @@ import {
   Settings,
   Wrench,
   Droplets,
+  DollarSign,
 } from "lucide-react";
 
 const services = [
@@ -14,6 +15,12 @@ const services = [
     title: "Site Selection",
     description:
       "High-traffic, defensible locations in secondary markets. Traffic counts, competitive mapping, zoning navigation, and full feasibility.",
+  },
+  {
+    icon: DollarSign,
+    title: "Capital Formation & Deal Structuring",
+    description:
+      "We help assemble the capital — LP structuring, lender introductions, pro forma development, and business plan packaging. Whether you're funding your first wash or your fifth, we build the deal.",
   },
   {
     icon: HardHat,
@@ -29,15 +36,15 @@ const services = [
   },
   {
     icon: BarChart3,
-    title: "Consulting & Financial Ops",
+    title: "Consulting & Fractional CFO",
     description:
-      "Fractional CFO, KPI dashboarding (WPC, ARPM, uptime, churn), chemical optimization, and membership growth strategy.",
+      "KPI dashboarding (WPC, ARPM, uptime, churn), chemical cost optimization, membership growth strategy, and ongoing financial operations.",
   },
   {
     icon: Settings,
     title: "Management",
     description:
-      "Principal-level operational management — not absentee oversight. We run it with the intensity of an owner-operator. Because we are one.",
+      "Full operational management or turnkey handoff — your call. We run washes with the intensity of an owner-operator, because we are one.",
   },
   {
     icon: Wrench,
@@ -83,6 +90,7 @@ export default function Capabilities() {
         <div className="mb-12 flex flex-wrap items-center gap-2">
           {[
             "Site Selection",
+            "Capital",
             "Development",
             "Equipment",
             "Chemicals",
@@ -93,7 +101,7 @@ export default function Capabilities() {
               <span className="inline-flex items-center rounded-full bg-grey-100 px-3 py-1 text-xs font-semibold text-grey-600">
                 {step}
               </span>
-              {i < 5 && <span className="text-grey-300">→</span>}
+              {i < 6 && <span className="text-grey-300">→</span>}
             </div>
           ))}
         </div>

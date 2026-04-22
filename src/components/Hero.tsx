@@ -13,10 +13,10 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p className="text-lg text-grey-500 max-w-2xl mb-8 leading-relaxed">
-            We handle everything — site selection, design, equipment,
-            construction, chemicals, and ongoing operations. One partner from
-            dirt to grand opening and beyond. Low-labor, high-margin IBAs and
-            self-serve washes in secondary markets.
+            Site selection, capital formation, design, equipment, construction,
+            chemicals, and ongoing operations — or any piece of it. We build it
+            and manage it, or build it and hand you the keys. High-margin IBAs
+            and self-serve washes at a fraction of tunnel cost.
           </p>
 
           {/* CTAs */}
@@ -37,7 +37,13 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 pt-8 border-t border-grey-200">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-grey-200">
+            <div>
+              <p className="text-2xl font-bold text-grey-900">$800K–$2M</p>
+              <p className="text-sm text-grey-400 mt-0.5">
+                All-In Project Cost
+              </p>
+            </div>
             <div>
               <p className="text-2xl font-bold text-grey-900">40–50%</p>
               <p className="text-sm text-grey-400 mt-0.5">

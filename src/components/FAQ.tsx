@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "How much does it cost to build a car wash?",
     answer:
-      "It depends on the model. Express friction tunnels run $4–6M+ in metro markets. Our focus — IBAs and self-serve hybrids in secondary markets — typically ranges from $800K–$2M all-in. We build a detailed pro forma before you commit capital.",
+      "Express tunnels run $5–7M+ in metro markets. Our model is different. A self-serve retrofit starts around $800K–$1.2M. A gas station retool or conversion runs $1–$1.5M. A greenfield IBA build lands $1.5–$2M all-in. Tunnel-grade returns at a fraction of the build cost. We run a detailed pro forma before you commit a dollar.",
   },
   {
     question: "How long from first call to grand opening?",
