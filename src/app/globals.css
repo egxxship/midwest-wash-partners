@@ -1,40 +1,77 @@
 @import "tailwindcss";
+@import "@fontsource-variable/schibsted-grotesk/wght.css";
 
-@theme inline {
-  --color-white: #ffffff;
-  --color-grey-50: #fafafa;
-  --color-grey-100: #f5f5f5;
-  --color-grey-200: #e5e5e5;
-  --color-grey-300: #d4d4d4;
-  --color-grey-400: #a3a3a3;
-  --color-grey-500: #737373;
-  --color-grey-600: #525252;
-  --color-grey-700: #404040;
-  --color-grey-800: #262626;
-  --color-grey-900: #171717;
-  --color-grey-950: #0a0a0a;
+@theme {
+  --color-paper: #ffffff;
+  --color-mist: #f2f4f7;
+  --color-line: #dce1e8;
+  --color-line-strong: #b9c2ce;
+  --color-ink: #0c1a2b;
+  --color-ink-2: #34445a;
+  --color-ink-3: #56667b;
+  --color-lake: #1450c8;
+  --color-lake-deep: #0d3a96;
+  --color-lake-tint: #e8effc;
+  --color-night: #0c1a2b;
+  --color-night-2: #a9b7c8;
+  --color-night-line: #24364c;
 
-  --color-rust-50: #fdf5ef;
-  --color-rust-100: #fae8d8;
-  --color-rust-200: #f4ccab;
-  --color-rust-300: #ecaa74;
-  --color-rust-400: #e28540;
-  --color-rust-500: #d4681e;
-  --color-rust-600: #b8510d;
-  --color-rust-700: #9a3f0e;
-  --color-rust-800: #7c3412;
-  --color-rust-900: #652d13;
+  --font-sans: "Schibsted Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-lake);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-lake);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  a {
+    text-underline-offset: 0.22em;
+    text-decoration-thickness: 1px;
+  }
+  input, select, textarea {
+    caret-color: var(--color-lake);
+  }
+  .tnum {
+    font-variant-numeric: tabular-nums lining-nums;
+  }
 }
 
-body {
-  background: var(--color-white);
-  color: var(--color-grey-900);
-  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+/* Service-area map: one authored reveal, west to east. */
+@keyframes sweep {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+.map-served {
+  animation: sweep 1.6s var(--ease-out-expo) 0.15s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .map-served { animation: none; }
 }
