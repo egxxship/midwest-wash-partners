@@ -32,6 +32,13 @@ const responsibilities: [string, "us" | "you" | "shared"][] = [
   ["Monthly rent", "you"],
 ];
 
+// Survey figures confirmed by Ezra 11/26/2026 — 100 wash customers at Express Suds, Ottawa.
+const survey = [
+  { figure: "15", label: "had never visited the station before — the wash brought them to the site" },
+  { figure: "25", label: "also bought something in the C-store that visit" },
+  { figure: "50", label: "also bought gas that day" },
+];
+
 const pump = [
   { title: "Members save at the pump", body: "A cents-off-per-gallon perk for wash members makes your station their regular stop." },
   { title: "Wash receipts sell inside", body: "Coffee, fountain drink, or snack offers on every wash receipt and member message." },
@@ -224,7 +231,24 @@ export default function FuelPage() {
             title="Partner at the pump."
             lede="A member who washes three or four times a month is a regular at your station. We set up the wash so it sends customers to your pumps and your register."
           />
-          <ul className="mt-14 grid gap-x-10 md:grid-cols-3">
+
+          <div className="mt-14 rounded-[4px] bg-mist px-7 py-9 sm:px-10">
+            <p className="text-[1.05rem] font-semibold text-ink">
+              We surveyed 100 wash customers at Express Suds in Ottawa. Of those 100:
+            </p>
+            <dl className="mt-7 grid gap-y-8 sm:grid-cols-3 sm:gap-x-10">
+              {survey.map((f) => (
+                <div key={f.label} className="flex flex-col border-t-2 border-lake pt-4">
+                  <dd className="tnum order-first text-[3rem] font-semibold leading-none tracking-[-0.03em] text-ink">
+                    {f.figure}
+                  </dd>
+                  <dt className="mt-2 leading-snug text-ink-2">{f.label}</dt>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <ul className="mt-16 grid gap-x-10 md:grid-cols-3">
             {pump.map((p) => (
               <li key={p.title} className="border-t-2 border-ink py-7">
                 <h3 className="text-[1.2rem] font-semibold tracking-[-0.01em] text-ink">{p.title}</h3>
