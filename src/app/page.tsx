@@ -202,8 +202,8 @@ export default function Home() {
 
       {/* Fuel & C-Store teaser */}
       <section aria-labelledby="fuel-teaser-title" className="bg-night py-24 text-white sm:py-28">
-        <Container className="grid gap-12 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-8">
+        <Container className="grid gap-12 lg:grid-cols-12 lg:items-center">
+          <div className="lg:col-span-7">
             <h2
               id="fuel-teaser-title"
               className="text-[clamp(2rem,1.2rem+2.8vw,3.25rem)] font-semibold leading-[1.06] tracking-[-0.03em]"
@@ -215,11 +215,25 @@ export default function Home() {
               to the pump and the store. We put up the capital for the rebuild,
               and we handle the operations.
             </p>
+            <div className="mt-10">
+              <ButtonLink href="/fuel-c-store-partners" variant="inverse">
+                Fuel & C-Store Partners
+              </ButtonLink>
+            </div>
           </div>
-          <div className="lg:col-span-4 lg:justify-self-end">
-            <ButtonLink href="/fuel-c-store-partners" variant="inverse">
-              Fuel & C-Store Partners
-            </ButtonLink>
+          <div className="lg:col-span-5">
+            <video
+              className="aspect-[1080/608] w-full rounded-[4px] bg-ink object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/video/wash-mist-poster.webp"
+              aria-label="Video: high-pressure blue mist washing a car in a touchless bay"
+            >
+              <source src="/video/wash-mist.mp4" type="video/mp4" />
+            </video>
           </div>
         </Container>
       </section>

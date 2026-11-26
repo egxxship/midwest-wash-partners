@@ -16,10 +16,10 @@ const problems = [
 ];
 
 const steps = [
-  { title: "Lease us the wash", body: "A long-term lease on the wash building and pad. The store and the pumps stay yours." },
-  { title: "We rebuild it", body: "We fund the equipment and buildout, and our own crew does the work." },
-  { title: "We run it", body: "We operate, service, and market the wash and build its membership base." },
-  { title: "You collect", body: "Rent every month, plus members filling up and shopping inside every week." },
+  { title: "Lease us the wash", body: "A long-term lease on the wash building and pad. The store and the pumps stay yours.", img: "/photos/step-lease.webp", alt: "An empty touchless wash bay with yellow safety bollards" },
+  { title: "We rebuild it", body: "We fund the equipment and buildout, and our own crew does the work.", img: "/photos/step-rebuild.webp", alt: "New blue dryer equipment installed overhead in a rebuilt bay" },
+  { title: "We run it", body: "We operate, service, and market the wash and build its membership base.", img: "/photos/step-run.webp", alt: "A car covered in green triple foam during a touchless wash" },
+  { title: "You collect", body: "Rent every month, plus members filling up and shopping inside every week.", img: "/photos/step-collect.webp", alt: "A clean black car in the bay after its wash" },
 ];
 
 const responsibilities: [string, "us" | "you" | "shared"][] = [
@@ -142,13 +142,41 @@ export default function FuelPage() {
           />
           <ol className="mt-16 grid gap-px overflow-hidden rounded-[4px] border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((s, i) => (
-              <li key={s.title} className="bg-paper p-8">
-                <span className="tnum text-[0.95rem] font-semibold text-lake">Step {i + 1}</span>
-                <h3 className="mt-3 text-[1.3rem] font-semibold tracking-[-0.015em] text-ink">{s.title}</h3>
-                <p className="mt-2 leading-relaxed text-ink-2">{s.body}</p>
+              <li key={s.title} className="bg-paper">
+                <img
+                  src={s.img}
+                  width={1200}
+                  height={750}
+                  loading="lazy"
+                  alt={s.alt}
+                  className="aspect-[16/10] w-full object-cover"
+                />
+                <div className="p-7">
+                  <span className="tnum text-[0.95rem] font-semibold text-lake">Step {i + 1}</span>
+                  <h3 className="mt-3 text-[1.3rem] font-semibold tracking-[-0.015em] text-ink">{s.title}</h3>
+                  <p className="mt-2 leading-relaxed text-ink-2">{s.body}</p>
+                </div>
               </li>
             ))}
           </ol>
+
+          <figure className="mt-16">
+            <video
+              className="aspect-[1080/608] w-full rounded-[4px] bg-ink object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/video/wash-foam-poster.webp"
+              aria-label="Video: a car moving through a rebuilt touchless bay, covered in green triple foam"
+            >
+              <source src="/video/wash-foam.mp4" type="video/mp4" />
+            </video>
+            <figcaption className="mt-3 text-[0.9rem] text-ink-3">
+              Triple foam in a rebuilt bay — Express Suds, Ottawa, IL.
+            </figcaption>
+          </figure>
 
           <div className="mt-20 grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-4">
@@ -228,11 +256,11 @@ export default function FuelPage() {
               modern equipment and a membership program from day one.
             </p>
             <img
-              src="/photos/bay-dryers.webp"
-              width={1500}
-              height={1125}
+              src="/photos/mist-truck.webp"
+              width={1200}
+              height={1600}
               loading="lazy"
-              alt="Inside the rebuilt Express Suds bay: blue dryers and polished equipment"
+              alt="A pickup truck in the Express Suds bay under high-pressure mist"
               className="mt-8 aspect-[4/3] w-full rounded-[4px] object-cover"
             />
           </div>
