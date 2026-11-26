@@ -113,14 +113,6 @@ export default function FuelPage() {
               title="It sits behind your pumps, and nobody really owns it."
               lede="Most station washes we see have the same problems. None of them are about the location."
             />
-            <img
-              src="/photos/wash-as-found.webp"
-              width={1500}
-              height={1125}
-              loading="lazy"
-              alt="A dated wash building with faded signage, before renovation"
-              className="mt-10 aspect-[4/3] w-full rounded-[4px] object-cover"
-            />
           </div>
           <dl className="grid gap-x-10 sm:grid-cols-2 lg:col-span-7">
             {problems.map((p) => (
@@ -256,11 +248,11 @@ export default function FuelPage() {
               modern equipment and a membership program from day one.
             </p>
             <img
-              src="/photos/mist-truck.webp"
-              width={1200}
-              height={1600}
+              src="/photos/station-exterior.webp"
+              width={1500}
+              height={1263}
               loading="lazy"
-              alt="A pickup truck in the Express Suds bay under high-pressure mist"
+              alt="The Express Suds wash bay beside the station's convenience store"
               className="mt-8 aspect-[4/3] w-full rounded-[4px] object-cover"
             />
           </div>
@@ -275,8 +267,69 @@ export default function FuelPage() {
         </Container>
       </section>
 
+      {/* Dixon conversion */}
+      <section aria-labelledby="dixon-title" className="py-24 sm:py-28">
+        <Container>
+          <SectionHead
+            id="dixon-title"
+            title="Next up: Dixon, Illinois."
+            lede={
+              <>
+                A leased station wash we&rsquo;re rebuilding into a Stella&rsquo;s
+                Car Wash, our consumer wash brand — new touchless equipment,
+                24-hour operation, and memberships.
+              </>
+            }
+          />
+          <div className="mt-14 grid gap-x-6 gap-y-10 md:grid-cols-3">
+            <figure>
+              <img
+                src="/photos/wash-as-found.webp"
+                width={1500}
+                height={1125}
+                loading="lazy"
+                alt="The Dixon wash as leased: a dated building under an overcast sky"
+                className="aspect-[16/10] w-full rounded-[4px] object-cover"
+              />
+              <figcaption className="mt-3 text-[0.9rem] text-ink-3">
+                <span className="font-semibold text-ink">As leased.</span> The
+                wash as we found it.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="/photos/dixon-render-approach.webp"
+                width={1500}
+                height={844}
+                loading="lazy"
+                alt="Rendering of the rebuilt Dixon site with fresh signage, landscaping, and a pay station"
+                className="aspect-[16/10] w-full rounded-[4px] object-cover"
+              />
+              <figcaption className="mt-3 text-[0.9rem] text-ink-3">
+                <span className="font-semibold text-ink">Rendering.</span> The
+                same site, rebuilt and rebranded.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="/photos/dixon-render-interior.webp"
+                width={1500}
+                height={844}
+                loading="lazy"
+                alt="Rendering of the rebuilt bay interior with new touchless equipment"
+                className="aspect-[16/10] w-full rounded-[4px] object-cover"
+              />
+              <figcaption className="mt-3 text-[0.9rem] text-ink-3">
+                <span className="font-semibold text-ink">Rendering.</span> Inside
+                the rebuilt bay.
+              </figcaption>
+            </figure>
+          </div>
+        </Container>
+      </section>
+
       {/* Timeline */}
-      <section aria-labelledby="timeline-title" className="py-24 sm:py-28">
+      <section aria-labelledby="timeline-title" className="border-t border-line py-24 sm:py-28">
         <Container>
           <SectionHead
             id="timeline-title"

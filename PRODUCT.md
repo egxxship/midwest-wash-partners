@@ -29,7 +29,7 @@ Service area: Illinois, southern Wisconsin, northwest Indiana, southwest Michiga
 - Next.js 16 app on Vercel; repo egxxship/midwest-wash-partners.
 
 ## Brand Commitments
-- MWP brand only. Do not show Stella's Car Wash.
+- Stella's Car Wash (MWP's consumer brand) may appear where it tells the conversion story (Dixon renders, per Ezra 11/26); otherwise MWP brand leads.
 - No investor/fund/return content. No term sheet figures on the public site.
 - Do not name Circle K, Shell, Johnson Oil, or any station brand/owner.
 - Professional, clean, operator voice.
