@@ -19,7 +19,7 @@ export function ButtonLink({
   const styles = {
     primary: "bg-lake text-white hover:bg-lake-deep",
     secondary: "border border-line-strong text-ink hover:border-ink hover:bg-mist",
-    inverse: "bg-white text-ink hover:bg-lake-tint",
+    inverse: "bg-bolt text-ink hover:bg-bolt-bright",
   }[variant];
   return (
     <Link

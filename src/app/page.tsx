@@ -114,7 +114,39 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="mt-20 grid gap-8 rounded-[4px] bg-ink px-7 py-10 text-white sm:px-12 sm:py-12 lg:grid-cols-12 lg:items-center">
+          <div className="mt-16 grid gap-6 sm:grid-cols-2">
+            <figure>
+              <img
+                src="/photos/wash-as-found.webp"
+                width={1500}
+                height={1125}
+                loading="lazy"
+                alt="A dated self-serve car wash building under an overcast sky, before renovation"
+                className="aspect-[4/3] w-full rounded-[4px] object-cover"
+              />
+              <figcaption className="mt-3 text-[0.9rem] text-ink-3">
+                <span className="font-semibold text-ink">As found.</span> A tired
+                wash on good real estate — the sites we look for.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="/photos/bay-after.webp"
+                width={1500}
+                height={1125}
+                loading="lazy"
+                alt="A bright, rebuilt touchless wash bay with modern equipment and clean walls"
+                className="aspect-[4/3] w-full rounded-[4px] object-cover"
+              />
+              <figcaption className="mt-3 text-[0.9rem] text-ink-3">
+                <span className="font-semibold text-ink">After our rebuild.</span>{" "}
+                Express Suds, Ottawa, IL — modern touchless equipment and a
+                membership program.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div className="mt-16 grid gap-8 rounded-[4px] bg-ink px-7 py-10 text-white sm:px-12 sm:py-12 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-8">
               <h3 className="text-[clamp(1.5rem,1.1rem+1.4vw,2rem)] font-semibold leading-tight tracking-[-0.02em]">
                 Thinking about selling your wash?

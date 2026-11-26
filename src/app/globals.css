@@ -15,6 +15,8 @@
   --color-night: #0c1a2b;
   --color-night-2: #a9b7c8;
   --color-night-line: #24364c;
+  --color-bolt: #ffc422;
+  --color-bolt-bright: #ffd34d;
 
   --font-sans: "Schibsted Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
 
@@ -61,6 +63,10 @@
   }
   .tnum {
     font-variant-numeric: tabular-nums lining-nums;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-line-strong) transparent;
   }
 }
 

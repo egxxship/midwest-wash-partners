@@ -30,6 +30,16 @@ const team = [
     bio: "Handles daily operations, maintenance, and construction support. A long-time member of the community with deep ties across the region's small businesses.",
   },
   {
+    name: "Jared Conen",
+    role: "Real Estate",
+    bio: "Leads real estate for the platform, from site sourcing and selection through acquisition.",
+  },
+  {
+    name: "Jay Byer",
+    role: "Finance, Accounting & Marketing",
+    bio: "Runs accounting, finance, and marketing across the platform, from site-level books to membership growth.",
+  },
+  {
     name: "Ezra Simons",
     role: "Strategy & Development",
     bio: "Leads strategy, acquisitions, and development. Previously grew Laundry Growth Partners from 5 to 23 laundromats and co-founded a healthcare M&A advisory firm.",

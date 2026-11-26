@@ -86,6 +86,14 @@ export default function FuelPage() {
             </div>
           </div>
           <aside className="self-end lg:col-span-4">
+            <img
+              src="/photos/wash-in-action.webp"
+              width={1200}
+              height={1600}
+              alt="A pickup truck inside a touchless wash bay, mid-wash under colored lighting"
+              className="mb-6 aspect-[3/4] w-full rounded-[4px] object-cover"
+              fetchPriority="high"
+            />
             <ul className="space-y-4 border-t-2 border-ink pt-6 text-[1.05rem] text-ink">
               <li><span className="font-semibold">No capital</span> <span className="text-ink-2">from you for the rebuild</span></li>
               <li><span className="font-semibold">Uptime</span> <span className="text-ink-2">backed by our own service techs</span></li>
@@ -104,6 +112,14 @@ export default function FuelPage() {
               id="problem-title"
               title="It sits behind your pumps, and nobody really owns it."
               lede="Most station washes we see have the same problems. None of them are about the location."
+            />
+            <img
+              src="/photos/wash-as-found.webp"
+              width={1500}
+              height={1125}
+              loading="lazy"
+              alt="A dated wash building with faded signage, before renovation"
+              className="mt-10 aspect-[4/3] w-full rounded-[4px] object-cover"
             />
           </div>
           <dl className="grid gap-x-10 sm:grid-cols-2 lg:col-span-7">
@@ -211,11 +227,19 @@ export default function FuelPage() {
               A touchless in-bay wash inside a branded fuel station, opened with
               modern equipment and a membership program from day one.
             </p>
+            <img
+              src="/photos/bay-dryers.webp"
+              width={1500}
+              height={1125}
+              loading="lazy"
+              alt="Inside the rebuilt Express Suds bay: blue dryers and polished equipment"
+              className="mt-8 aspect-[4/3] w-full rounded-[4px] object-cover"
+            />
           </div>
-          <dl className="divide-y divide-night-line border-y border-night-line lg:col-span-6 lg:col-start-7">
+          <dl className="self-start divide-y divide-night-line border-y border-night-line lg:col-span-6 lg:col-start-7">
             {caseFigures.map((f) => (
               <div key={f.label} className="flex items-baseline gap-6 py-7">
-                <dd className="w-40 shrink-0 whitespace-nowrap text-[clamp(1.8rem,1.4rem+1.2vw,2.4rem)] font-semibold leading-none tracking-[-0.03em]">{f.figure}</dd>
+                <dd className="w-40 shrink-0 whitespace-nowrap text-[clamp(1.8rem,1.4rem+1.2vw,2.4rem)] font-semibold leading-none tracking-[-0.03em] text-bolt">{f.figure}</dd>
                 <dt className="order-last text-[1.05rem] leading-snug text-night-2">{f.label}</dt>
               </div>
             ))}
@@ -233,7 +257,7 @@ export default function FuelPage() {
           <ol className="mt-16 grid gap-y-10 md:grid-cols-5 md:gap-x-6">
             {timeline.map((t) => (
               <li key={t.title} className="relative border-t-2 border-line pt-6 md:pr-2">
-                <span aria-hidden="true" className="absolute -top-[7px] left-0 h-3 w-3 rounded-full border-2 border-lake bg-paper" />
+                <span aria-hidden="true" className="absolute -top-[7px] left-0 h-3 w-3 rounded-full bg-bolt" />
                 <p className="tnum text-[0.9rem] font-semibold text-lake">{t.when}</p>
                 <h3 className="mt-2 text-[1.2rem] font-semibold tracking-[-0.01em] text-ink">{t.title}</h3>
                 <p className="mt-2 leading-relaxed text-ink-2">{t.body}</p>

@@ -38,7 +38,7 @@ Service area: Illinois, southern Wisconsin, northwest Indiana, southwest Michiga
 - Proof strip (from Ezra 2026-11-26, pending his final confirmation of wording): 3 sites, 2,500 members, 25+ washes serviced.
 - Express Suds, Ottawa IL case study: 358 paying members, ~$272K annualized revenue (last 3 months), opened Aug 2025, ~11,570 vehicles/day, $0 marketing spend. Must be verified against the CFO control panel before launch.
 - Station-impact figures (+9% in-store, +6% gallons, 1-in-3) are UNVERIFIED placeholders — never publish.
-- Team: Ian Cardosi, Steve Keutzer, Steve Foes, Michael Sullivan, Ezra Simons (bios from lender deck 7.23.2026). No headshots yet.
+- Team: Ian Cardosi, Steve Keutzer, Steve Foes, Michael Sullivan, Jared Conen (real estate), Jay Byer (finance, accounting, marketing), Ezra Simons. No headshots yet.
 - No real site photography on hand yet; no MWP logo exists.
 
 ## Product Principles
